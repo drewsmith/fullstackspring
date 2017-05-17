@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu|Montserrat);.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .close-nav-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+html,
+body {
+  font-family: 'Montserrat';
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: #222;
+}
+#header {
+  height: 50px;
+  background: #e9e9e9;
+  padding: 20px 20px 0px 20px;
+}
+#header .open {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 700;
+  cursor: pointer;
+  float: left;
+  display: inline-block;
+}
+#header .title {
+  font-size: 14px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+#header #text-size {
+  float: right;
+  cursor: pointer;
+}
+#header #text-size .small {
+  font-size: 10px;
+  margin-right: 5px;
+}
+#header #text-size .medium {
+  font-size: 16px;
+  margin-right: 5px;
+}
+#header #text-size .large {
+  font-size: 24px;
+}
+#content {
+  transition: margin-left 0.5s;
+}
+#passage {
+  padding: 20px;
+}
+#passage h1 {
+  margin: 0;
+  padding: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
